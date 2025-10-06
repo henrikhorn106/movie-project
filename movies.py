@@ -22,7 +22,7 @@ import requests
 from dotenv import load_dotenv
 from thefuzz import process, fuzz
 
-import movie_storage_sql as storage
+from movie_storage import movie_storage_sql as storage
 
 load_dotenv()
 API_KEY = os.getenv('API_KEY')
